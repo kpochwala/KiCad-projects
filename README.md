@@ -1,0 +1,2 @@
+# KiCad-projects
+Mine projects
