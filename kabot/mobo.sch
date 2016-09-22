@@ -1,0 +1,408 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Vishay
+LIBS:stm32
+LIBS:warsztaty
+LIBS:74XX_KP
+LIBS:kubot_rev_B-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F030K6Tx U1
+U 1 1 56D3A2D9
+P 9750 -1950
+F 0 "U1" H 7750 -825 50  0000 L BNN
+F 1 "STM32F030K6Tx" H 11750 -825 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-32_7x7mm_Pitch0.8mm" H 11750 -875 50  0000 R TNN
+F 3 "" H 9750 -1950 50  0000 C CNN
+	1    9750 -1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR012
+U 1 1 56D3A814
+P 9750 -3900
+F 0 "#PWR012" H 9750 -4050 50  0001 C CNN
+F 1 "+3.3V" H 9750 -3760 50  0000 C CNN
+F 2 "" H 9750 -3900 50  0000 C CNN
+F 3 "" H 9750 -3900 50  0000 C CNN
+	1    9750 -3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 56D3A850
+P 4650 5900
+F 0 "#PWR013" H 4650 5650 50  0001 C CNN
+F 1 "GND" H 4650 5750 50  0000 C CNN
+F 2 "" H 4650 5900 50  0000 C CNN
+F 3 "" H 4650 5900 50  0000 C CNN
+	1    4650 5900
+	1    0    0    -1  
+$EndComp
+Text HLabel 7600 3450 2    60   Input ~ 0
+SWDIO
+Text HLabel 7600 3550 2    60   Input ~ 0
+SWCLK
+Text HLabel 7150 -1650 0    60   Input ~ 0
+SCK
+Text HLabel 7150 -1550 0    60   Input ~ 0
+MISO
+Text HLabel 7150 -1450 0    60   Input ~ 0
+MOSI
+Wire Wire Line
+	9650 -3150 9650 -3550
+Wire Wire Line
+	9650 -3550 10400 -3550
+Wire Wire Line
+	9850 -3550 9850 -3150
+Wire Wire Line
+	9750 -3900 9750 -3150
+Connection ~ 9750 -3550
+Wire Wire Line
+	9650 -850 9650 -450
+Wire Wire Line
+	9650 -450 9750 -450
+Wire Wire Line
+	9750 -450 9750 -850
+Wire Wire Line
+	6850 3450 7600 3450
+Wire Wire Line
+	6850 3550 7600 3550
+Connection ~ 9700 -450
+Wire Wire Line
+	7650 -1650 7150 -1650
+Wire Wire Line
+	7650 -1550 7150 -1550
+Wire Wire Line
+	7650 -1450 7150 -1450
+$Comp
+L GND #PWR014
+U 1 1 56D44984
+P 7000 -2400
+F 0 "#PWR014" H 7000 -2650 50  0001 C CNN
+F 1 "GND" H 7000 -2550 50  0000 C CNN
+F 2 "" H 7000 -2400 50  0000 C CNN
+F 3 "" H 7000 -2400 50  0000 C CNN
+	1    7000 -2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56D452AE
+P 7150 -2550
+F 0 "R2" V 7230 -2550 50  0000 C CNN
+F 1 "4K7" V 7150 -2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7080 -2550 50  0001 C CNN
+F 3 "" H 7150 -2550 50  0000 C CNN
+	1    7150 -2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 -2550 7650 -2550
+Wire Wire Line
+	7000 -2550 7000 -2400
+$Comp
+L C C1
+U 1 1 56D4635A
+P 10050 -3400
+F 0 "C1" H 10075 -3300 50  0000 L CNN
+F 1 "100n" H 10075 -3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10088 -3550 50  0001 C CNN
+F 3 "" H 10050 -3400 50  0000 C CNN
+	1    10050 -3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56D46419
+P 10400 -3400
+F 0 "C2" H 10425 -3300 50  0000 L CNN
+F 1 "100n" H 10425 -3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10438 -3550 50  0001 C CNN
+F 3 "" H 10400 -3400 50  0000 C CNN
+	1    10400 -3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 9850 -3550
+Connection ~ 10050 -3550
+Wire Wire Line
+	10050 -3250 10400 -3250
+$Comp
+L GND #PWR015
+U 1 1 56D46584
+P 10400 -3250
+F 0 "#PWR015" H 10400 -3500 50  0001 C CNN
+F 1 "GND" H 10400 -3400 50  0000 C CNN
+F 2 "" H 10400 -3250 50  0000 C CNN
+F 3 "" H 10400 -3250 50  0000 C CNN
+	1    10400 -3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10400 -3250
+Text HLabel 12600 -1850 2    60   Input ~ 0
+M1B
+Wire Wire Line
+	11850 -1550 12600 -1550
+Wire Wire Line
+	11850 -1750 12600 -1750
+Wire Wire Line
+	11850 -1850 12600 -1850
+Text HLabel 12600 -1750 2    60   Input ~ 0
+M1A
+Text HLabel 12600 -1950 2    60   Input ~ 0
+M1PWM
+Text HLabel 12600 -1550 2    60   Input ~ 0
+M2B
+Text HLabel 12600 -1250 2    60   Input ~ 0
+M2A
+Text HLabel 12600 -1650 2    60   Input ~ 0
+M2PWM
+Wire Wire Line
+	6850 4450 7550 4450
+Wire Wire Line
+	6850 4550 7550 4550
+Text HLabel 7550 4450 2    60   Input ~ 0
+SCL
+Text HLabel 7550 4550 2    60   Input ~ 0
+SDA
+Wire Wire Line
+	11850 -1950 12600 -1950
+Wire Wire Line
+	11850 -1650 12600 -1650
+Wire Wire Line
+	11850 -1250 12600 -1250
+Wire Wire Line
+	7650 -2750 7150 -2750
+Text HLabel 7150 -2750 0    60   Input ~ 0
+RST
+Wire Wire Line
+	11850 -2050 12600 -2050
+Wire Wire Line
+	11850 -2150 13250 -2150
+Wire Wire Line
+	11850 -2250 12900 -2250
+Text HLabel 12600 -2050 2    60   Input ~ 0
+EN_DATA
+Text HLabel 7150 -1850 0    60   Input ~ 0
+EN_CLOCK
+Text HLabel 7150 -1750 0    60   Input ~ 0
+EN_RESET
+Wire Wire Line
+	7650 -1750 7150 -1750
+Wire Wire Line
+	7650 -1850 7150 -1850
+$Comp
+L LED D5
+U 1 1 56DB5345
+P 12900 -3050
+F 0 "D5" H 12900 -2950 50  0000 C CNN
+F 1 "LED" H 12900 -3150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12900 -3050 50  0001 C CNN
+F 3 "" H 12900 -3050 50  0000 C CNN
+	1    12900 -3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D7
+U 1 1 56DB544E
+P 13250 -3050
+F 0 "D7" H 13250 -2950 50  0000 C CNN
+F 1 "LED" H 13250 -3150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 13250 -3050 50  0001 C CNN
+F 3 "" H 13250 -3050 50  0000 C CNN
+	1    13250 -3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 56DB547E
+P 12900 -2550
+F 0 "R6" V 12980 -2550 50  0000 C CNN
+F 1 "R" V 12900 -2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12830 -2550 50  0001 C CNN
+F 3 "" H 12900 -2550 50  0000 C CNN
+	1    12900 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 56DB54DA
+P 13250 -2550
+F 0 "R9" V 13330 -2550 50  0000 C CNN
+F 1 "R" V 13250 -2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13180 -2550 50  0001 C CNN
+F 3 "" H 13250 -2550 50  0000 C CNN
+	1    13250 -2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 -2850 12900 -2700
+Wire Wire Line
+	13250 -2850 13250 -2700
+Wire Wire Line
+	13250 -2150 13250 -2400
+Wire Wire Line
+	12900 -2250 12900 -2400
+$Comp
+L +3.3V #PWR016
+U 1 1 56DB563E
+P 12900 -3400
+F 0 "#PWR016" H 12900 -3550 50  0001 C CNN
+F 1 "+3.3V" H 12900 -3260 50  0000 C CNN
+F 2 "" H 12900 -3400 50  0000 C CNN
+F 3 "" H 12900 -3400 50  0000 C CNN
+	1    12900 -3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 -3400 12900 -3250
+$Comp
+L +3.3V #PWR017
+U 1 1 56DB579A
+P 13250 -3400
+F 0 "#PWR017" H 13250 -3550 50  0001 C CNN
+F 1 "+3.3V" H 13250 -3260 50  0000 C CNN
+F 2 "" H 13250 -3400 50  0000 C CNN
+F 3 "" H 13250 -3400 50  0000 C CNN
+	1    13250 -3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 -3400 13250 -3250
+$Comp
+L LED D13
+U 1 1 56DB5C1A
+P 12550 -3050
+F 0 "D13" H 12550 -2950 50  0000 C CNN
+F 1 "LED" H 12550 -3150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 12550 -3050 50  0001 C CNN
+F 3 "" H 12550 -3050 50  0000 C CNN
+	1    12550 -3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R10
+U 1 1 56DB5C20
+P 12550 -2550
+F 0 "R10" V 12630 -2550 50  0000 C CNN
+F 1 "R" V 12550 -2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12480 -2550 50  0001 C CNN
+F 3 "" H 12550 -2550 50  0000 C CNN
+	1    12550 -2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 -2850 12550 -2700
+$Comp
+L +3.3V #PWR018
+U 1 1 56DB5C27
+P 12550 -3400
+F 0 "#PWR018" H 12550 -3550 50  0001 C CNN
+F 1 "+3.3V" H 12550 -3260 50  0000 C CNN
+F 2 "" H 12550 -3400 50  0000 C CNN
+F 3 "" H 12550 -3400 50  0000 C CNN
+	1    12550 -3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 -3400 12550 -3250
+Wire Wire Line
+	11850 -2350 12550 -2350
+Wire Wire Line
+	12550 -2350 12550 -2400
+$Comp
+L STM32F100R6Tx U6
+U 1 1 570A2557
+P 4850 3750
+F 0 "U6" H 2950 5675 50  0000 L BNN
+F 1 "STM32F100R6Tx" H 6750 5675 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 6750 5625 50  0000 R TNN
+F 3 "" H 4850 3750 50  0000 C CNN
+	1    4850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5750 4650 5900
+Wire Wire Line
+	4750 5750 4750 5800
+Wire Wire Line
+	4650 5800 5050 5800
+Connection ~ 4650 5800
+Wire Wire Line
+	4850 5800 4850 5750
+Connection ~ 4750 5800
+Wire Wire Line
+	4950 5800 4950 5750
+Connection ~ 4850 5800
+Wire Wire Line
+	5050 5800 5050 5750
+Connection ~ 4950 5800
+$Comp
+L +3.3V #PWR019
+U 1 1 570A2F03
+P 4650 1600
+F 0 "#PWR019" H 4650 1450 50  0001 C CNN
+F 1 "+3.3V" H 4650 1740 50  0000 C CNN
+F 2 "" H 4650 1600 50  0000 C CNN
+F 3 "" H 4650 1600 50  0000 C CNN
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1600 4650 1750
+Wire Wire Line
+	4650 1700 5050 1700
+Wire Wire Line
+	5050 1700 5050 1750
+Connection ~ 4650 1700
+Wire Wire Line
+	4950 1750 4950 1700
+Connection ~ 4950 1700
+Wire Wire Line
+	4850 1700 4850 1750
+Connection ~ 4850 1700
+Wire Wire Line
+	4750 1750 4750 1700
+Connection ~ 4750 1700
+$EndSCHEMATC

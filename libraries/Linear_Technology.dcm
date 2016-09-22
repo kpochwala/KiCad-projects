@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC4316
+D Single I2C/SMBusAddress Translator 
+K i2c,translator,ltc,shift,4316
+F /home/bob/Dokumenty/ksiazki/4316fa.pdf
+$ENDCMP
+#
+#End Doc Library

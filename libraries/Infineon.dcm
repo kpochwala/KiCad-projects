@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BSC123N08NS3G
+D OptiMOS Power-Transistor
+K Infineon, Mosfet, Power, N, Channel
+$ENDCMP
+#
+#End Doc Library

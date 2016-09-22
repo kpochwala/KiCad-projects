@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name libraries)(type KiCad)(uri /home/bob/Dokumenty/workspace_kicad/libraries)(options "")(descr ""))
+  (lib (name warsztaty)(type KiCad)(uri "/home/bob/Dokumenty/workspace_kicad/libraries/libsy i footprinty/footprint/warsztaty.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MC33932
+D 5.0A Throttle Control H-Bridge
+K h-bridge,bridge,h,mc,33932,nxp
+F /home/bob/Dokumenty/ksiazki/MC33932.pdf
+$ENDCMP
+#
+#End Doc Library

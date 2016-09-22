@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VCNL3020
+D Fully Integrated Proximity Sensor with Infrared Emitter and I2C Interface featuring Interrupt Function
+K VCNL VCNL3020
+$ENDCMP
+#
+#End Doc Library

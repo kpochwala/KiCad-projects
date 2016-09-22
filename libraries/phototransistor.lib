@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Q_PHOTO
+#
+DEF Q_PHOTO Q 0 0 Y N 1 F N
+F0 "Q" 250 50 50 H V R CNN
+F1 "Q_PHOTO" 500 -50 50 H V R CNN
+F2 "" 150 100 50 H V C CNN
+F3 "" -50 0 50 H V C CNN
+DRAW
+C 0 0 111 0 1 10 N
+P 2 0 1 0  -25 25  50 100 N
+P 3 0 1 0  -25 -25  50 -100  50 -100 N
+P 3 0 1 20  -25 75  -25 -75  -25 -75 N
+P 5 0 1 0  0 -70  20 -50  40 -90  0 -70  0 -70 F
+X E 1 50 -200 100 U 50 50 1 1 P
+X C 2 50 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

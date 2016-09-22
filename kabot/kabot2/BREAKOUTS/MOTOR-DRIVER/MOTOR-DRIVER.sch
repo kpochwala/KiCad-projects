@@ -1,0 +1,576 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NXP
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 57CC2EBE
+P 4400 5100
+F 0 "R2" V 4480 5100 50  0000 C CNN
+F 1 "220R" V 4400 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4330 5100 50  0001 C CNN
+F 3 "" H 4400 5100 50  0000 C CNN
+	1    4400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57CC2F73
+P 4200 5100
+F 0 "R1" V 4280 5100 50  0000 C CNN
+F 1 "220R" V 4200 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 5100 50  0001 C CNN
+F 3 "" H 4200 5100 50  0000 C CNN
+	1    4200 5100
+	1    0    0    -1  
+$EndComp
+Text Label 4300 5500 0    60   ~ 0
+GND
+Text Label 5800 5500 0    60   ~ 0
+GND
+Text Label 5800 2300 0    60   ~ 0
+VMOT
+$Comp
+L C C1
+U 1 1 57CC34D1
+P 7350 2900
+F 0 "C1" H 7375 3000 50  0000 L CNN
+F 1 "100nF" H 7375 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7388 2750 50  0001 C CNN
+F 3 "" H 7350 2900 50  0000 C CNN
+	1    7350 2900
+	1    0    0    -1  
+$EndComp
+Text Label 4150 2700 0    60   ~ 0
+VCC
+Text Label 3350 3100 0    60   ~ 0
+APWM
+Text Label 3350 3300 0    60   ~ 0
+BPWM
+Text Label 3350 3600 0    60   ~ 0
+A1
+Text Label 3350 3700 0    60   ~ 0
+A2
+Text Label 3350 3900 0    60   ~ 0
+B1
+Text Label 3350 4000 0    60   ~ 0
+B2
+Text Label 3350 4300 0    60   ~ 0
+~AFAULT
+Text Label 3350 4400 0    60   ~ 0
+~BFAULT
+Text Label 3350 4600 0    60   ~ 0
+ACURRENT
+Text Label 3350 4700 0    60   ~ 0
+BCURRENT
+Text Label 7850 3600 2    60   ~ 0
+AMOT1
+Text Label 7850 4000 2    60   ~ 0
+AMOT2
+Text Label 7850 4400 2    60   ~ 0
+BMOT1
+Text Label 7850 4800 2    60   ~ 0
+BMOT2
+$Comp
+L C C2
+U 1 1 57CC4102
+P 7700 2900
+F 0 "C2" H 7725 3000 50  0000 L CNN
+F 1 "100nF" H 7725 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7738 2750 50  0001 C CNN
+F 3 "" H 7700 2900 50  0000 C CNN
+	1    7700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 57CC49F1
+P 8150 2900
+F 0 "C3" H 8175 3000 50  0000 L CNN
+F 1 "100nF" H 8175 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8188 2750 50  0001 C CNN
+F 3 "" H 8150 2900 50  0000 C CNN
+	1    8150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 57CC49F7
+P 8450 2900
+F 0 "C4" H 8475 3000 50  0000 L CNN
+F 1 "100nF" H 8475 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8488 2750 50  0001 C CNN
+F 3 "" H 8450 2900 50  0000 C CNN
+	1    8450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 57CC4BF2
+P 8750 2900
+F 0 "C5" H 8775 3000 50  0000 L CNN
+F 1 "100uF" H 8775 2800 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_HandSoldering" H 8788 2750 50  0001 C CNN
+F 3 "" H 8750 2900 50  0000 C CNN
+	1    8750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C6
+U 1 1 57CC4C71
+P 9150 2900
+F 0 "C6" H 9175 3000 50  0000 L CNN
+F 1 "100uF" H 9175 2800 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_HandSoldering" H 9188 2750 50  0001 C CNN
+F 3 "" H 9150 2900 50  0000 C CNN
+	1    9150 2900
+	1    0    0    -1  
+$EndComp
+Text Label 9150 3350 0    60   ~ 0
+GND
+Wire Wire Line
+	7050 3400 7250 3400
+Wire Wire Line
+	7050 3600 8450 3600
+Wire Wire Line
+	7250 3400 7250 3600
+Wire Wire Line
+	7250 3500 7050 3500
+Connection ~ 7250 3500
+Wire Wire Line
+	7050 3800 7250 3800
+Wire Wire Line
+	7250 3800 7250 4000
+Wire Wire Line
+	7050 4000 8450 4000
+Connection ~ 7250 4000
+Wire Wire Line
+	7050 3900 7250 3900
+Connection ~ 7250 3900
+Wire Wire Line
+	7050 4400 8450 4400
+Wire Wire Line
+	7250 4200 7250 4400
+Wire Wire Line
+	7050 4200 7250 4200
+Wire Wire Line
+	7050 4300 7250 4300
+Connection ~ 7250 4300
+Wire Wire Line
+	7050 4600 7250 4600
+Wire Wire Line
+	7250 4600 7250 4800
+Wire Wire Line
+	7050 4800 8450 4800
+Wire Wire Line
+	7050 4700 7250 4700
+Connection ~ 7250 4700
+Connection ~ 7250 4800
+Wire Wire Line
+	5900 2600 5900 2800
+Wire Wire Line
+	5900 2700 9150 2700
+Wire Wire Line
+	6300 2700 6300 2800
+Wire Wire Line
+	6200 2800 6200 2700
+Connection ~ 6200 2700
+Wire Wire Line
+	6100 2700 6100 2800
+Connection ~ 6100 2700
+Wire Wire Line
+	6000 2700 6000 2800
+Connection ~ 6000 2700
+Wire Wire Line
+	5300 2800 5300 2700
+Wire Wire Line
+	5300 2700 5700 2700
+Wire Wire Line
+	5700 2600 5700 2800
+Wire Wire Line
+	5600 2800 5600 2700
+Connection ~ 5600 2700
+Wire Wire Line
+	5500 2800 5500 2700
+Connection ~ 5500 2700
+Wire Wire Line
+	5400 2800 5400 2700
+Connection ~ 5400 2700
+Wire Wire Line
+	5700 2600 5900 2600
+Connection ~ 5900 2700
+Connection ~ 5700 2700
+Wire Wire Line
+	5800 2600 5800 2300
+Connection ~ 5800 2600
+Wire Wire Line
+	5400 5100 5400 5200
+Wire Wire Line
+	5400 5200 5700 5200
+Wire Wire Line
+	5700 5100 5700 5300
+Wire Wire Line
+	5600 5100 5600 5200
+Connection ~ 5600 5200
+Wire Wire Line
+	5500 5100 5500 5200
+Connection ~ 5500 5200
+Wire Wire Line
+	5900 5300 5900 5100
+Wire Wire Line
+	5900 5200 6200 5200
+Wire Wire Line
+	6200 5200 6200 5100
+Wire Wire Line
+	6100 5100 6100 5200
+Connection ~ 6100 5200
+Wire Wire Line
+	6000 5100 6000 5200
+Connection ~ 6000 5200
+Wire Wire Line
+	5700 5300 5900 5300
+Connection ~ 5900 5200
+Connection ~ 5700 5200
+Wire Wire Line
+	5800 5100 5800 5500
+Connection ~ 5800 5300
+Wire Wire Line
+	4600 4300 2850 4300
+Wire Wire Line
+	4600 4400 2850 4400
+Wire Wire Line
+	4600 4000 2850 4000
+Wire Wire Line
+	4600 3900 2850 3900
+Wire Wire Line
+	4600 3700 2850 3700
+Wire Wire Line
+	4600 3600 2850 3600
+Wire Wire Line
+	4600 3100 2850 3100
+Wire Wire Line
+	4600 3300 2850 3300
+Wire Wire Line
+	2850 4600 4600 4600
+Wire Wire Line
+	2850 4700 4600 4700
+Wire Wire Line
+	4400 4950 4400 4700
+Connection ~ 4400 4700
+Wire Wire Line
+	4200 4950 4200 4600
+Connection ~ 4200 4600
+Wire Wire Line
+	4200 5250 4200 5350
+Wire Wire Line
+	4200 5350 4400 5350
+Wire Wire Line
+	4400 5350 4400 5250
+Wire Wire Line
+	4300 5350 4300 5500
+Connection ~ 4300 5350
+Wire Wire Line
+	4150 2700 4150 3400
+Connection ~ 4150 3200
+Wire Wire Line
+	4600 3200 4150 3200
+Wire Wire Line
+	4150 3400 4600 3400
+Connection ~ 7250 3600
+Connection ~ 7250 4400
+Wire Wire Line
+	7050 3100 7350 3100
+Wire Wire Line
+	7350 3100 7350 3050
+Wire Wire Line
+	7050 3200 7700 3200
+Wire Wire Line
+	7700 3200 7700 3050
+Wire Wire Line
+	7700 2700 7700 2750
+Wire Wire Line
+	7350 2700 7350 2750
+Connection ~ 7350 2700
+Connection ~ 6300 2700
+Wire Wire Line
+	8150 3050 8150 3200
+Wire Wire Line
+	8450 3200 8450 3050
+Wire Wire Line
+	8450 2700 8450 2750
+Wire Wire Line
+	8150 2700 8150 2750
+Connection ~ 7700 2700
+Connection ~ 8150 2700
+Wire Wire Line
+	8150 3200 9150 3200
+Wire Wire Line
+	8750 2700 8750 2750
+Connection ~ 8450 2700
+Wire Wire Line
+	9150 2700 9150 2750
+Connection ~ 8750 2700
+Wire Wire Line
+	9150 3050 9150 3350
+Connection ~ 8450 3200
+Wire Wire Line
+	8750 3050 8750 3200
+Connection ~ 8750 3200
+Connection ~ 9150 3200
+Wire Wire Line
+	2600 2950 4150 2950
+Connection ~ 4150 2950
+Wire Wire Line
+	2850 4850 3350 4850
+Wire Wire Line
+	3350 4850 3350 5050
+Text Label 3350 5050 0    60   ~ 0
+GND
+Text Label 3350 2950 0    60   ~ 0
+VCC
+Text Label 3350 2300 0    60   ~ 0
+VMOT
+Wire Wire Line
+	2850 2850 3350 2850
+Wire Wire Line
+	3350 2850 3350 2300
+$Comp
+L MC33932 U1
+U 1 1 57F16EBD
+P 5800 4000
+F 0 "U1" H 4850 3000 60  0000 C CNN
+F 1 "MC33932" H 5800 4050 60  0000 C CNN
+F 2 "libraries:HSOP_44" H 5850 3950 60  0001 C CNN
+F 3 "" H 5850 3950 60  0001 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 57F17450
+P 2650 2850
+F 0 "P2" H 2650 2950 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 2850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 2850 50  0001 C CNN
+F 3 "" H 2650 2850 50  0000 C CNN
+	1    2650 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 57F1779A
+P 2400 2950
+F 0 "P1" H 2400 3050 50  0000 C CNN
+F 1 "CONN_01X01" V 2500 2950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2400 2950 50  0001 C CNN
+F 3 "" H 2400 2950 50  0000 C CNN
+	1    2400 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 57F17ADD
+P 2650 3100
+F 0 "P3" H 2650 3200 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 3100 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 3100 50  0001 C CNN
+F 3 "" H 2650 3100 50  0000 C CNN
+	1    2650 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 57F17B25
+P 2650 3300
+F 0 "P4" H 2650 3400 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 3300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 3300 50  0001 C CNN
+F 3 "" H 2650 3300 50  0000 C CNN
+	1    2650 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 57F17B62
+P 2650 3600
+F 0 "P5" H 2650 3700 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 3600 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 3600 50  0001 C CNN
+F 3 "" H 2650 3600 50  0000 C CNN
+	1    2650 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 57F17BA8
+P 2650 3700
+F 0 "P6" H 2650 3800 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 3700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 3700 50  0001 C CNN
+F 3 "" H 2650 3700 50  0000 C CNN
+	1    2650 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P8
+U 1 1 57F17BFB
+P 2650 4000
+F 0 "P8" H 2650 4100 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 4000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 4000 50  0001 C CNN
+F 3 "" H 2650 4000 50  0000 C CNN
+	1    2650 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P7
+U 1 1 57F17C47
+P 2650 3900
+F 0 "P7" H 2650 4000 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 3900 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 3900 50  0001 C CNN
+F 3 "" H 2650 3900 50  0000 C CNN
+	1    2650 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 57F17E29
+P 2650 4300
+F 0 "P9" H 2650 4400 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 4300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 4300 50  0001 C CNN
+F 3 "" H 2650 4300 50  0000 C CNN
+	1    2650 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P10
+U 1 1 57F17E7B
+P 2650 4400
+F 0 "P10" H 2650 4500 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 4400 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 4400 50  0001 C CNN
+F 3 "" H 2650 4400 50  0000 C CNN
+	1    2650 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P11
+U 1 1 57F17ED7
+P 2650 4600
+F 0 "P11" H 2650 4700 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 4600 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 4600 50  0001 C CNN
+F 3 "" H 2650 4600 50  0000 C CNN
+	1    2650 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P12
+U 1 1 57F17F33
+P 2650 4700
+F 0 "P12" H 2650 4800 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 4700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 4700 50  0001 C CNN
+F 3 "" H 2650 4700 50  0000 C CNN
+	1    2650 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P13
+U 1 1 57F17F82
+P 2650 4850
+F 0 "P13" H 2650 4950 50  0000 C CNN
+F 1 "CONN_01X01" V 2750 4850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2650 4850 50  0001 C CNN
+F 3 "" H 2650 4850 50  0000 C CNN
+	1    2650 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P17
+U 1 1 57F18376
+P 8650 4800
+F 0 "P17" H 8650 4900 50  0000 C CNN
+F 1 "CONN_01X01" V 8750 4800 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 8650 4800 50  0001 C CNN
+F 3 "" H 8650 4800 50  0000 C CNN
+	1    8650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P16
+U 1 1 57F18710
+P 8650 4400
+F 0 "P16" H 8650 4500 50  0000 C CNN
+F 1 "CONN_01X01" V 8750 4400 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 8650 4400 50  0001 C CNN
+F 3 "" H 8650 4400 50  0000 C CNN
+	1    8650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P15
+U 1 1 57F1878E
+P 8650 4000
+F 0 "P15" H 8650 4100 50  0000 C CNN
+F 1 "CONN_01X01" V 8750 4000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 8650 4000 50  0001 C CNN
+F 3 "" H 8650 4000 50  0000 C CNN
+	1    8650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P14
+U 1 1 57F18989
+P 8650 3600
+F 0 "P14" H 8650 3700 50  0000 C CNN
+F 1 "CONN_01X01" V 8750 3600 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 8650 3600 50  0001 C CNN
+F 3 "" H 8650 3600 50  0000 C CNN
+	1    8650 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

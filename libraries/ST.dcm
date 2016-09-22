@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LSM330TR
+D iNEMO inertial module:3D accelerometer and 3D gyroscope
+K inemo,imu,lsm,330,acc,accelerometer,gyro,gyroscope,imu,st
+F /home/bob/Dokumenty/ksiazki/lsm330tr.pdf
+$ENDCMP
+#
+#End Doc Library

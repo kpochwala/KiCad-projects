@@ -1,0 +1,392 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Vishay
+LIBS:stm32
+LIBS:warsztaty
+LIBS:74XX_KP
+LIBS:kubot_rev_B-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TB6612 U3
+U 1 1 56D4129D
+P 3950 3250
+F 0 "U3" H 3550 2450 50  0000 C CNN
+F 1 "TB6612" H 3950 3950 50  0000 C CNN
+F 2 "warsztaty:TB6612" H 3950 3250 50  0001 C CNN
+F 3 "" H 3950 3250 50  0001 C CNN
+	1    3950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TB6612 U2
+U 1 1 56D3B2B6
+P 3850 5950
+F 0 "U2" H 3450 5150 50  0000 C CNN
+F 1 "TB6612" H 3850 6650 50  0000 C CNN
+F 2 "warsztaty:TB6612" H 3850 5950 50  0001 C CNN
+F 3 "" H 3850 5950 50  0001 C CNN
+	1    3850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 56D423B4
+P 3000 4450
+F 0 "#PWR020" H 3000 4200 50  0001 C CNN
+F 1 "GND" H 3000 4300 50  0000 C CNN
+F 2 "" H 3000 4450 50  0000 C CNN
+F 3 "" H 3000 4450 50  0000 C CNN
+	1    3000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 56D423DA
+P 2900 7150
+F 0 "#PWR021" H 2900 6900 50  0001 C CNN
+F 1 "GND" H 2900 7000 50  0000 C CNN
+F 2 "" H 2900 7150 50  0000 C CNN
+F 3 "" H 2900 7150 50  0000 C CNN
+	1    2900 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR022
+U 1 1 56D4247A
+P 4700 4900
+F 0 "#PWR022" H 4700 4750 50  0001 C CNN
+F 1 "+12V" H 4700 5040 50  0000 C CNN
+F 2 "" H 4700 4900 50  0000 C CNN
+F 3 "" H 4700 4900 50  0000 C CNN
+	1    4700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR023
+U 1 1 56D424F0
+P 4800 2200
+F 0 "#PWR023" H 4800 2050 50  0001 C CNN
+F 1 "+12V" H 4800 2340 50  0000 C CNN
+F 2 "" H 4800 2200 50  0000 C CNN
+F 3 "" H 4800 2200 50  0000 C CNN
+	1    4800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR024
+U 1 1 56D4252A
+P 3100 2200
+F 0 "#PWR024" H 3100 2050 50  0001 C CNN
+F 1 "+3.3V" H 3100 2340 50  0000 C CNN
+F 2 "" H 3100 2200 50  0000 C CNN
+F 3 "" H 3100 2200 50  0000 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR025
+U 1 1 56D4267E
+P 3000 4900
+F 0 "#PWR025" H 3000 4750 50  0001 C CNN
+F 1 "+3.3V" H 3000 5040 50  0000 C CNN
+F 2 "" H 3000 4900 50  0000 C CNN
+F 3 "" H 3000 4900 50  0000 C CNN
+	1    3000 4900
+	1    0    0    -1  
+$EndComp
+Text HLabel 2500 2900 0    60   Input ~ 0
+M1PWM
+Text HLabel 2500 3000 0    60   Input ~ 0
+M1A
+Text HLabel 2500 3100 0    60   Input ~ 0
+M1B
+Text HLabel 2400 5600 0    60   Input ~ 0
+M2PWM
+Text HLabel 2400 5700 0    60   Input ~ 0
+M2A
+Text HLabel 2400 5800 0    60   Input ~ 0
+M2B
+$Comp
+L CP C6
+U 1 1 56D42E88
+P 5500 2400
+F 0 "C6" H 5525 2500 50  0000 L CNN
+F 1 "100u" H 5525 2300 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_HandSoldering" H 5538 2250 50  0001 C CNN
+F 3 "" H 5500 2400 50  0000 C CNN
+	1    5500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 56D430DB
+P 5200 2400
+F 0 "C4" H 5225 2500 50  0000 L CNN
+F 1 "100n" H 5225 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5238 2250 50  0001 C CNN
+F 3 "" H 5200 2400 50  0000 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 56D43561
+P 5500 2750
+F 0 "#PWR026" H 5500 2500 50  0001 C CNN
+F 1 "GND" H 5500 2600 50  0000 C CNN
+F 2 "" H 5500 2750 50  0000 C CNN
+F 3 "" H 5500 2750 50  0000 C CNN
+	1    5500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3550 3000 3550
+Wire Wire Line
+	3000 3550 3000 4450
+Wire Wire Line
+	3200 3950 3000 3950
+Connection ~ 3000 3950
+Wire Wire Line
+	3200 3850 3000 3850
+Connection ~ 3000 3850
+Wire Wire Line
+	3200 3750 3000 3750
+Connection ~ 3000 3750
+Wire Wire Line
+	3200 3650 3000 3650
+Connection ~ 3000 3650
+Wire Wire Line
+	2500 3100 3200 3100
+Wire Wire Line
+	3000 3100 3000 3350
+Wire Wire Line
+	3000 3350 3200 3350
+Wire Wire Line
+	2500 3000 3200 3000
+Wire Wire Line
+	2900 3000 2900 3450
+Wire Wire Line
+	2900 3450 3200 3450
+Wire Wire Line
+	3200 3250 3100 3250
+Wire Wire Line
+	3100 3250 3100 2900
+Wire Wire Line
+	2500 2900 3200 2900
+Connection ~ 3100 2900
+Connection ~ 2900 3000
+Connection ~ 3000 3100
+Wire Wire Line
+	3100 2800 3200 2800
+Wire Wire Line
+	3100 2200 3100 2800
+Connection ~ 3100 2700
+Wire Wire Line
+	4800 2900 4700 2900
+Wire Wire Line
+	4800 2200 4800 2900
+Wire Wire Line
+	4800 2700 4700 2700
+Wire Wire Line
+	4700 2800 4800 2800
+Connection ~ 4800 2800
+Wire Wire Line
+	4700 3050 4900 3050
+Wire Wire Line
+	4900 3150 4700 3150
+Wire Wire Line
+	4700 3500 5350 3500
+Wire Wire Line
+	4900 3600 4700 3600
+Wire Wire Line
+	4700 3750 4800 3750
+Wire Wire Line
+	4800 3250 4800 3850
+Wire Wire Line
+	4800 3850 4700 3850
+Wire Wire Line
+	4700 3250 4800 3250
+Wire Wire Line
+	4700 3350 5350 3350
+Connection ~ 4800 3750
+Connection ~ 4800 3350
+Wire Wire Line
+	4900 3050 4900 3600
+Connection ~ 4900 3150
+Connection ~ 4900 3500
+Wire Wire Line
+	3100 2700 3200 2700
+Wire Wire Line
+	3100 6250 2900 6250
+Wire Wire Line
+	2900 6250 2900 7150
+Wire Wire Line
+	3100 6650 2900 6650
+Connection ~ 2900 6650
+Wire Wire Line
+	3100 6550 2900 6550
+Connection ~ 2900 6550
+Wire Wire Line
+	3100 6450 2900 6450
+Connection ~ 2900 6450
+Wire Wire Line
+	3100 6350 2900 6350
+Connection ~ 2900 6350
+Wire Wire Line
+	2400 5800 3100 5800
+Wire Wire Line
+	2900 5800 2900 6050
+Wire Wire Line
+	2900 6050 3100 6050
+Wire Wire Line
+	2400 5700 3100 5700
+Wire Wire Line
+	2800 5700 2800 6150
+Wire Wire Line
+	2800 6150 3100 6150
+Wire Wire Line
+	3100 5950 3000 5950
+Wire Wire Line
+	3000 5950 3000 5600
+Wire Wire Line
+	2400 5600 3100 5600
+Connection ~ 3000 5600
+Connection ~ 2800 5700
+Connection ~ 2900 5800
+Wire Wire Line
+	3000 5500 3100 5500
+Connection ~ 3000 5400
+Wire Wire Line
+	4700 5600 4600 5600
+Wire Wire Line
+	4700 4900 4700 5600
+Wire Wire Line
+	4700 5400 4600 5400
+Wire Wire Line
+	4600 5500 4700 5500
+Connection ~ 4700 5500
+Wire Wire Line
+	4600 5750 4800 5750
+Wire Wire Line
+	4800 5850 4600 5850
+Wire Wire Line
+	4600 6200 5250 6200
+Wire Wire Line
+	4800 6300 4600 6300
+Wire Wire Line
+	4600 6450 4700 6450
+Wire Wire Line
+	4700 5950 4700 6550
+Wire Wire Line
+	4700 6550 4600 6550
+Wire Wire Line
+	4600 5950 4700 5950
+Wire Wire Line
+	4600 6050 5250 6050
+Connection ~ 4700 6450
+Connection ~ 4700 6050
+Wire Wire Line
+	4800 5750 4800 6300
+Connection ~ 4800 5850
+Connection ~ 4800 6200
+Wire Wire Line
+	3000 5400 3100 5400
+Connection ~ 4800 2700
+Connection ~ 4700 5400
+Wire Wire Line
+	4700 2250 5500 2250
+Connection ~ 4800 2250
+Connection ~ 5200 2250
+Wire Wire Line
+	5200 2550 5500 2550
+Wire Wire Line
+	5500 2550 5500 2750
+Connection ~ 5500 2550
+$Comp
+L CP C5
+U 1 1 56D43E15
+P 5400 5100
+F 0 "C5" H 5425 5200 50  0000 L CNN
+F 1 "100u" H 5425 5000 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_HandSoldering" H 5438 4950 50  0001 C CNN
+F 3 "" H 5400 5100 50  0000 C CNN
+	1    5400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 56D43E1B
+P 5100 5100
+F 0 "C3" H 5125 5200 50  0000 L CNN
+F 1 "100n" H 5125 5000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5138 4950 50  0001 C CNN
+F 3 "" H 5100 5100 50  0000 C CNN
+	1    5100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 56D43E21
+P 5400 5450
+F 0 "#PWR027" H 5400 5200 50  0001 C CNN
+F 1 "GND" H 5400 5300 50  0000 C CNN
+F 2 "" H 5400 5450 50  0000 C CNN
+F 3 "" H 5400 5450 50  0000 C CNN
+	1    5400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4950 5400 4950
+Connection ~ 5100 4950
+Wire Wire Line
+	5100 5250 5400 5250
+Wire Wire Line
+	5400 5250 5400 5450
+Connection ~ 5400 5250
+Connection ~ 4700 4950
+Wire Wire Line
+	3000 4900 3000 5500
+Text HLabel 4700 2250 0    60   Input ~ 0
+VBAT
+$EndSCHEMATC
